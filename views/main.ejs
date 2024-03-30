@@ -1,0 +1,30 @@
+<!-- main.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Welcome to the Application</h1>
+
+    <p>Choose your role:</p>
+    
+    <!-- Form to create a new author -->
+    <form action="/authors/home" method="post">
+        <input type="hidden" name="authorName" value="">
+        <input type="hidden" name="blogTitle" value="">
+        <button class="btn mb-3 btn-secondary" type="submit">Author Home</button>
+    </form>
+
+    <!-- Form to create a new user -->
+    <form action="/list-authors" method="get">
+        <!-- <input type="hidden" name="userName" value=""> -->
+        <button class="btn btn-secondary" type="submit">Reader Home</button>
+    </form>
+</body>
+</html>

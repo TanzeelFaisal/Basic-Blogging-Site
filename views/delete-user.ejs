@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <title>Delete Users</title>
+</head>
+<body>
+    <h1>Delete Users</h1>
+    <ul>
+        <% users.forEach(user => { %>
+            <form action="/users/delete-user/<%= user.user_id %>" method="post" >
+                <li>
+                    <p><%= user.user_name %> <button type="submit">Delete</button></p>
+                </li>
+            </form>
+        <% }); %>
+    </ul>
+</body>
+</html>

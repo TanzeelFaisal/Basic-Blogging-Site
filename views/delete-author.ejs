@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <title>Delete Authors</title>
+</head>
+<body>
+    <h1>Delete Authors</h1>
+    <ul>
+        <% authors.forEach(author => { %>
+            <form action="/authors/delete-author/<%= author.author_id %>" method="post" >
+                <li>
+                    <p><%= author.author_name %> <button type="submit">Delete</button></p>
+                </li>
+            </form>
+        <% }); %>
+    </ul>
+</body>
+</html>

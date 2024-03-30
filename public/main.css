@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #ffffffd7 !important;
+    min-height: 100vh;
+    background-image: linear-gradient( 111.4deg,  rgba(7,7,9,1) 6.5%, rgba(27,24,113,1) 93.2% );
+}
+
+.underline {
+    font-weight: 300;
+}
+
+.edit-article {
+    min-width: 40vw;
+}
+
+hr {
+    background-color: white;
+    width: 90vw;
+}
+
+.card-header {
+    background-color: #ffffff17 !important;
+    color: white !important;
+}
+
+.card {
+    width: 300px;
+    margin: 10px;
+    background-color: #00000022 !important;
+    color: rgba(255, 255, 255, 0.598) !important;
+}
+
+.card-container {
+    display: flex;
+    max-width: 90vw;
+    flex-wrap: wrap;
+}
+
+.card p {
+    font-size: 10px;
+    padding-left: 20px;
+}
+
+.underline:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+p, label {
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: white !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    border-radius: 10px;
+    background-color: #00000022;
+}
+
+.comment span {
+    font-size: 10px;
+}
+
+.comment > div {
+    border-radius: 5px;
+    background-color: #0000004f;
+    width: 10vw;
+    text-align: center;
+}
+
+.comment > p {
+    padding-left: 10px;
+}
